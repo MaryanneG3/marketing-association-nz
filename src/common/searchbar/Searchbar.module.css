@@ -1,0 +1,52 @@
+.searchbarSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  padding: 40px;
+  background-image: url("./images/background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+  width: 95%;
+  padding: 50px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.searchbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 600px;
+
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5),
+    /* First layer of the glow */ 0 0 30px rgba(0, 255, 255, 0.5),
+    /* Second layer of the glow */ 0 0 45px rgba(0, 255, 255, 0.5);
+}
+
+.searchbarInput {
+  height: 100%;
+  width: 500px;
+  border: none;
+}
+
+.searchbarLabel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100px;
+  padding: 0 20px;
+  color: white;
+  background-color: #011226;
+  border: solid #011226 2px;
+  font-size: large;
+}
