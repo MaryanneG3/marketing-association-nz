@@ -50,7 +50,7 @@
   font-size: 12px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .articleCard {
     max-height: 250px;
     max-width: 250px;

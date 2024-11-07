@@ -35,6 +35,12 @@
   }
 }
 
+@media (max-width: 915px) {
+  .navlink {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   .navlink {
     display: none;

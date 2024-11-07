@@ -30,10 +30,43 @@
 .companyTitle {
   margin-left: 20px;
   color: rgb(211, 237, 244);
+  font-size: 20px;
 }
 
 @media (max-width: 1300px) {
   .companyTitle {
-    display: none;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .logoSection {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .imageContainer {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoSection {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .imageContainer {
+    width: 35px;
+    height: 35px;
+  }
+
+  .companyTitle {
+    font-size: 12px;
+  }
+
+  .logoSection {
+    margin-right: 0;
   }
 }
