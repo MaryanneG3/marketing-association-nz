@@ -17,7 +17,7 @@
   height: 20vh;
   width: 95%;
   padding: 20px;
-  color: rgb(160, 220, 235);
+  color: rgb(194, 231, 240);
   font-size: 1.5em;
 }
 
@@ -34,18 +34,71 @@
 
 .searchbarInput {
   height: 100%;
-  width: 500px;
+  width: 90%;
   border: none;
 }
 
 .searchLabel {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
-  width: 100px;
+  width: 10%;
   padding: 0 20px;
   color: white;
   background-color: #011226;
   border: solid #011226 2px;
-  font-size: larger;
+  font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .searchbarContainer {
+    width: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  .searchbarContainer {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .searchbarContainer {
+    width: 400px;
+  }
+
+  .searchLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .searchbarContainer {
+    width: 350px;
+  }
+
+  .searchLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .searchbarContainer {
+    width: 300px;
+  }
+
+  .searchLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .searchbarContainer {
+    width: 250px;
+  }
+
+  .searchLabel {
+    font-size: 12px;
+  }
 }

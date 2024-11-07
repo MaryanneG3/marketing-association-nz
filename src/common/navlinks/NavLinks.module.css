@@ -1,0 +1,42 @@
+.navLinksContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navlink {
+  text-decoration: none;
+  padding: 12px;
+  margin: 4px;
+  color: rgb(160, 220, 235);
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navlink:hover {
+  font-weight: 900;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #084b56, 0 0 30px #0d3650;
+}
+
+#loginNavlink {
+  border-radius: 10px;
+  box-shadow: 0 0 15px #074049;
+  padding: 12px 20px;
+}
+
+#loginNavlink:hover {
+  box-shadow: 0 0 15px #084b56, 0 0 30px #144c6f;
+}
+
+@media (max-width: 1300px) {
+  .navlink {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navlink {
+    display: none;
+  }
+}
