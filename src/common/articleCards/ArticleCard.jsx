@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
 import styles from "./ArticleCard.module.css";
 
-function ArticleCard(news_id, title, date, imgsrc) {
+function ArticleCard(newsId, title, date, imgSrc) {
   return (
     <div>
       <NavLink
         to="#article-page-link"
         className={styles.articleCard}
-        key={news_id}
+        key={newsId}
       >
-        <img src={imgsrc} alt={title} />
+        <img src={imgSrc} alt={title} />
         <h4>{title}</h4>
         <p>{date}</p>
       </NavLink>
