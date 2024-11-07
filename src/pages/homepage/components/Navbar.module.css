@@ -5,6 +5,7 @@
   color: #9dc4f1;
   background-color: #011226;
   border-bottom: #b8d5f7 solid;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logoSection {
@@ -28,20 +29,11 @@
 
 .companyTitle {
   margin-left: 20px;
+  color: rgb(211, 237, 244);
 }
 
-.navLinksContainer {
-  display: flex;
-  align-items: center;
-}
-
-.navlink {
-  text-decoration: none;
-  padding: 12px;
-  margin: 4px;
-}
-
-#loginNavlink {
-  border: rgb(219, 216, 249) solid;
-  border-radius: 15px;
+@media (max-width: 1300px) {
+  .companyTitle {
+    display: none;
+  }
 }

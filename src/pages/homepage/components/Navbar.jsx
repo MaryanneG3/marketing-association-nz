@@ -1,5 +1,5 @@
+import NavLinks from "../../../common/navlinks/NavLinks";
 import styles from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -16,25 +16,7 @@ function Navbar() {
           Marketing Association New Zealand
         </h2>
       </div>
-
-      <div class={styles.navLinksContainer}>
-        <NavLink className={styles.navlink} to="/">
-          Home
-        </NavLink>
-        <NavLink className={styles.navlink} to="/contact">
-          Contact
-        </NavLink>
-        <NavLink className={styles.navlink} to="/about">
-          About us
-        </NavLink>
-        <NavLink
-          className={styles.navlink}
-          id={styles.loginNavlink}
-          to="/login"
-        >
-          Login
-        </NavLink>
-      </div>
+      <NavLinks />
     </div>
   );
 }
