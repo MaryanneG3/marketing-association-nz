@@ -19,7 +19,7 @@ function Menu() {
       </button>
       {isOpen && (
         <div className={navLinkStyles.menuNavLinksContainer}>
-          <NavLinks customClass={navLinkStyles.dropDownNavLinks} />
+          <NavLinks customClass={navLinkStyles.dropDownNavLinks} iconsOnly />
         </div>
       )}
     </div>
