@@ -33,6 +33,12 @@
 .dropDownNavLinks {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: #074049;
 }
 
 .menuNavLinksContainer {
@@ -40,6 +46,7 @@
   top: 100%;
   width: 100%;
   background-color: #e2eff6;
+  opacity: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
