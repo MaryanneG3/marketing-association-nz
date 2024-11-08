@@ -1,0 +1,17 @@
+@media (min-width: 915px) {
+  .menu {
+    display: none;
+  }
+}
+
+.barsBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bars {
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 18px;
+}
