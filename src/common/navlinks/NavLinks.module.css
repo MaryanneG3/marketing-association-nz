@@ -1,4 +1,4 @@
-.navLinksContainer {
+.defaultNavLinks {
   display: flex;
   align-items: center;
 }
@@ -29,12 +29,27 @@
   box-shadow: 0 0 15px #084b56, 0 0 30px #144c6f;
 }
 
+/* Menu nav links stlying - customClass applied */
+.dropDownNavLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuNavLinksContainer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #e2eff6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
 @media (max-width: 1300px) {
   .navlink {
     font-size: 14px;
   }
 }
-
+/* 
 @media (max-width: 915px) {
   .navlink {
     display: none;
@@ -45,4 +60,4 @@
   .navlink {
     display: none;
   }
-}
+} */
