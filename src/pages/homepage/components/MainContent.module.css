@@ -1,0 +1,30 @@
+.mainContainer {
+  background-color: white;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 50px;
+  background-color: #fbfcfd;
+  border-top: #b8d5f7 solid;
+  padding-top: 50px;
+}
+
+@media (max-width: 400px) {
+  .contentContainer {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 390px) {
+  .contentContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 320px) {
+  .contentContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

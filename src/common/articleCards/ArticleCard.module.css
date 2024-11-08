@@ -1,0 +1,103 @@
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-height: 350px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  font-family: "Montserrat";
+  background-color: #021f41;
+  border: 1px solid #10489d;
+
+  margin: 0 auto;
+}
+
+.articleCard:hover {
+  box-shadow: 0 0 15px #092043, /* First layer of the glow */ 0 0 30px #35a3e8;
+}
+
+.imgContainer {
+  height: 300px;
+  width: 350px;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+.articleImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  border-top: #aadef1 solid 1px;
+  padding-top: 15px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+@media (max-width: 410px) {
+  .articleCard {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .imgContainer {
+    max-height: 250px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 355px) {
+  .articleCard {
+    max-height: 280px;
+    max-width: 280px;
+  }
+
+  .imgContainer {
+    max-height: 200px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 350px) {
+  .articleCard {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .imgContainer {
+    max-height: 150px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 300px) {
+  .articleCard {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .imgContainer {
+    max-height: 180px;
+    max-width: 200px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+}

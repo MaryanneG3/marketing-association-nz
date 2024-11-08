@@ -1,0 +1,43 @@
+/* @media (min-width: 915px) {
+  .menu {
+    display: none;
+  }
+} */
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.barsBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bars {
+  font-size: 20px;
+  padding: 8px 4px;
+}
+
+@media (max-width: 480px) {
+  .bars {
+    font-size: 16px;
+    padding: 7px 4px;
+  }
+}
+
+@media (max-width: 390px) {
+  .bars {
+    font-size: 15px;
+    padding: 5px 3px;
+  }
+}
+
+@media (max-width: 320px) {
+  .bars {
+    font-size: 15px;
+    padding: 3px 1px;
+  }
+}

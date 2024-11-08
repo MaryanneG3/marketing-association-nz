@@ -5,6 +5,7 @@
   color: #9dc4f1;
   background-color: #011226;
   border-bottom: #b8d5f7 solid;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logoSection {
@@ -28,20 +29,85 @@
 
 .companyTitle {
   margin-left: 20px;
+  color: rgb(211, 237, 244);
+  font-size: 20px;
 }
 
-.navLinksContainer {
-  display: flex;
-  align-items: center;
+@media (max-width: 1300px) {
+  .companyTitle {
+    font-size: 16px;
+  }
 }
 
-.navlink {
-  text-decoration: none;
-  padding: 12px;
-  margin: 4px;
+@media (max-width: 1100px) {
+  .logoSection {
+    margin-right: 0;
+  }
 }
 
-#loginNavlink {
-  border: rgb(219, 216, 249) solid;
-  border-radius: 15px;
+@media (max-width: 500px) {
+  .imageContainer {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoSection {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .imageContainer {
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .companyTitle {
+    font-size: 14px;
+  }
+
+  .logoSection {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .imageContainer {
+    min-width: 35px;
+    min-height: 35px;
+  }
+
+  .companyTitle {
+    font-size: 12px;
+  }
+
+  .logoSection {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .imageContainer {
+    min-width: 35px;
+    min-height: 35px;
+  }
+
+  .companyTitle {
+    font-size: 12px;
+  }
+
+  .logoSection {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .imageContainer {
+    min-width: 35px;
+    min-height: 35px;
+  }
+
+  .logoSection {
+    margin-right: 12px;
+  }
 }

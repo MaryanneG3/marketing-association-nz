@@ -9,7 +9,7 @@ function Searchbar() {
 
       <div className={styles.searchbarContainer}>
         <input className={styles.searchbarInput} type="text" name="searchBar" />
-        <label className={styles.searchbarLabel} type="text">
+        <label className={styles.searchLabel} type="text">
           Search
         </label>
       </div>
