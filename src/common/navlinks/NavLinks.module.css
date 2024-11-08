@@ -20,16 +20,16 @@
 }
 
 #loginNavlink {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 0 15px #074049;
-  padding: 12px 20px;
+  padding: 12px;
 }
 
 #loginNavlink:hover {
   box-shadow: 0 0 15px #084b56, 0 0 30px #144c6f;
 }
 
-/* Menu nav links stlying - customClass applied */
+/* Menu nav links stlying - customClass */
 .dropDownNavLinks {
   display: flex;
   flex-direction: column;

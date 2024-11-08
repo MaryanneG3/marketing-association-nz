@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faInfoCircle,
-  faCogs,
+  faPhone,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,12 +17,14 @@ function NavLinks({ customClass, iconsOnly }) {
       </NavLink>
       <NavLink className={styles.navlink} to="/contact">
         {iconsOnly && (
-          <FontAwesomeIcon icon={faInfoCircle} className={styles.icon} />
+          <FontAwesomeIcon icon={faPhone} className={styles.icon} />
         )}
         {!iconsOnly && <span className={styles.navText}>Contact</span>}
       </NavLink>
       <NavLink className={styles.navlink} to="/about">
-        {iconsOnly && <FontAwesomeIcon icon={faCogs} className={styles.icon} />}
+        {iconsOnly && (
+          <FontAwesomeIcon icon={faInfoCircle} className={styles.icon} />
+        )}
         {!iconsOnly && <span className={styles.navText}>About</span>}
       </NavLink>
       <NavLink className={styles.navlink} id={styles.loginNavlink} to="/login">

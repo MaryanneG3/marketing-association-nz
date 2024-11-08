@@ -85,3 +85,19 @@
     max-width: 250px;
   }
 }
+
+@media (max-width: 300px) {
+  .articleCard {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .imgContainer {
+    max-height: 180px;
+    max-width: 200px;
+  }
+
+  .info {
+    font-size: 12px;
+  }
+}

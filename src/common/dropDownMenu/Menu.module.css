@@ -19,7 +19,6 @@
 .bars {
   font-size: 20px;
   padding: 8px 4px;
-  border-radius: 18px;
 }
 
 @media (max-width: 480px) {
@@ -39,6 +38,6 @@
 @media (max-width: 320px) {
   .bars {
     font-size: 15px;
-    padding: 4px 2px;
+    padding: 3px 1px;
   }
 }
