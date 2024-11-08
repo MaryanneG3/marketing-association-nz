@@ -1,10 +1,26 @@
 import NavLinks from "../../../common/navlinks/NavLinks";
+import Menu from "../../../common/dropDownMenu/Menu";
 import styles from "./Navbar.module.css";
+import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [isMinimizing, setIsMinimizing] = useState(window.innerWidth <= 915);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMinimizing(window.innerWidth <= 915);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   return (
     <div className={styles.navbar}>
-      <div class={styles.logoSection}>
+      <div className={styles.logoSection}>
         <div className={styles.imageContainer}>
           <img
             className={styles.logo}
@@ -16,7 +32,7 @@ function Navbar() {
           Marketing Association New Zealand
         </h2>
       </div>
-      <NavLinks />
+      {isMinimizing ? <Menu /> : <NavLinks />}
     </div>
   );
 }
