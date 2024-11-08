@@ -1,6 +1,7 @@
 import NavLinks from "../../../common/navlinks/NavLinks";
 import Menu from "../../../common/dropDownMenu/Menu";
 import styles from "./Navbar.module.css";
+import navLinkStyles from "../../../common/navlinks/NavLinks.module.css";
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -32,7 +33,11 @@ function Navbar() {
           Marketing Association New Zealand
         </h2>
       </div>
-      {isMinimizing ? <Menu /> : <NavLinks />}
+      {isMinimizing ? (
+        <Menu />
+      ) : (
+        <NavLinks customClass={navLinkStyles.defaultNavLinks} />
+      )}
     </div>
   );
 }

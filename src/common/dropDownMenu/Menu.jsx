@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./Menu.module.css";
+import navLinkStyles from "../navlinks/NavLinks.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavLinks from "../navlinks/NavLinks";
@@ -17,9 +18,9 @@ function Menu() {
         <FontAwesomeIcon className={styles.bars} icon={faBars} />
       </button>
       {isOpen && (
-        <ul className={styles.menuListContainer}>
-          <NavLinks />
-        </ul>
+        <div className={navLinkStyles.menuNavLinksContainer}>
+          <NavLinks customClass={navLinkStyles.dropDownNavLinks} />
+        </div>
       )}
     </div>
   );

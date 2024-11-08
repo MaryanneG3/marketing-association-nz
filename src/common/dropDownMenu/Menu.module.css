@@ -1,13 +1,19 @@
-@media (min-width: 915px) {
+/* @media (min-width: 915px) {
   .menu {
     display: none;
   }
+} */
+
+.menu {
+  position: relative;
+  display: inline-block;
 }
 
 .barsBtnContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .bars {
